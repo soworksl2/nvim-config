@@ -9,8 +9,6 @@ packer.startup(function(use)
         "williamboman/mason.nvim",
         run = ":MasonUpdate"
     }
-    -- installing mason-lspconfig extension
-    use 'williamboman/mason-lspconfig.nvim'
 
     -- lspconfig
     use 'neovim/nvim-lspconfig'
