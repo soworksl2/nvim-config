@@ -10,6 +10,7 @@ local DEFAULTS_LSPS = {
     'pyright',
     'lua_ls',
     'clangd',
+    'omnisharp'
 }
 
 -- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- 
