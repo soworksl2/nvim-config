@@ -26,3 +26,9 @@ go.autoindent = true
 
 go.number = true
 go.relativenumber = true
+
+-- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-- global keybinding
+-- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+vim.cmd('command! W :w') -- add the :W Ex command to save to prevent erros when fast type
