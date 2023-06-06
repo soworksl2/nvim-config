@@ -1,4 +1,4 @@
-require('plugins') -- install or configure all plugins
+require('plugins') -- install all plugins
 
 
 require('languages_services')
