@@ -37,10 +37,10 @@ vim.cmd('command! W :w') -- add the :W Ex command to save to prevent erros when 
 -- extra ExCommands
 -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
-function Gcwd()
+function Ccwd()
     local cwd = vim.fn.getcwd()
-    vim.fn.setreg('*', cwd)
+    vim.fn.setreg('+', cwd)
     print('cwd copied to clipboard: "' .. cwd .. '"')
 end
 
-vim.cmd('command! Gcwd :lua Gcwd()<CR>')
+vim.cmd('command! Ccwd :lua Ccwd()<CR>')
