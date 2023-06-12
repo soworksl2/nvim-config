@@ -1,0 +1,8 @@
+all files in this directory are the configuration handler for the configuration for each specific lsp server.
+
+the structure is the as the follow:
+
+{
+    server_id [string] = 'the server name that lsp_config has for this server',
+    configuration [dict|nil] = 'any configuration for this server if nil an empty dict is used'
+}
