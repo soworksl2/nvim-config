@@ -7,9 +7,9 @@ local cmp_lsp = require('cmp_nvim_lsp')
 -- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- 
 
 local DEFAULTS_LSPS = {
-    require('languages_services.lsp_servers_configuration.pyright'),
-    require('languages_services.lsp_servers_configuration.lua_ls'),
-    require('languages_services.lsp_servers_configuration.omnisharp'),
+    require('plugins_config.lsp_servers_configuration.pyright'),
+    require('plugins_config.lsp_servers_configuration.lua_ls'),
+    require('plugins_config.lsp_servers_configuration.omnisharp'),
 }
 
 -- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- 

@@ -1,25 +1,19 @@
-local packer = require('packer')
+-- install Lazy if it is not installed yet
 
-packer.startup(function(use)
-    -- recursive installation of packer
-    use 'wbthomason/packer.nvim'
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 
-    -- installing mason to manage lsp and extras languages services
-    use {
-        "williamboman/mason.nvim",
-        run = ":MasonUpdate"
-    }
+if not vim.loop.fs_stat(lazypath) then
+    vim.fn.system({
+        'git',
+        'clone',
+        '--filter=blob:none',
+        'https://github.com/folke/lazy.nvim.git',
+        '--branch=stable',
+        lazypath,
+    })
+end
 
-    -- lspconfig
-    use 'neovim/nvim-lspconfig'
+vim.opt.rtp:prepend(lazypath)
 
-    -- luasnip for snippet expansion
-    use 'L3MON4D3/LuaSnip'
-
-    -- autocompletion plugin
-    use 'hrsh7th/nvim-cmp'
-    use 'hrsh7th/cmp-nvim-lsp' -- autocompletion using lsp
-
-    -- a cool theme to fell good in all environment
-    use 'folke/tokyonight.nvim'
-end)
+require('lazy').setup('my_plugins')
+require('plugins_config')

@@ -4,7 +4,7 @@ local go = vim.go
 -- editor theme
 -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
-vim.cmd('colorscheme tokyonight')
+-- vim.cmd('colorscheme tokyonight')
 
 -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 -- global editor configurations
@@ -32,15 +32,3 @@ go.relativenumber = true
 -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
 vim.cmd('command! W :w') -- add the :W Ex command to save to prevent erros when fast type
-
--- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--- extra ExCommands
--- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-function Ccwd()
-    local cwd = vim.fn.getcwd()
-    vim.fn.setreg('+', cwd)
-    print('cwd copied to clipboard: "' .. cwd .. '"')
-end
-
-vim.cmd('command! Ccwd :lua Ccwd()<CR>')

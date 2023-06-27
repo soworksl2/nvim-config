@@ -1,6 +1,12 @@
+-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-- Importants configurations that should be made from start
+-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+vim.g.mapleader = ' '
+
+-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
 require('plugins') -- install all plugins
 
 
-require('languages_services')
-require('autocomplete_service')
 require('editor_configuration')
