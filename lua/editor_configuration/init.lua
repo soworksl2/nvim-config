@@ -1,10 +1,14 @@
 local go = vim.go
 
 -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
--- editor theme
+-- initial important configurations
 -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
--- vim.cmd('colorscheme tokyonight')
+vim.g.mapleader = ' '
+
+-- disable netrw file explorer to replace it with another better
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 -- global editor configurations
