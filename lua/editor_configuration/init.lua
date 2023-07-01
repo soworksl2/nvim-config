@@ -7,8 +7,12 @@ local go = vim.go
 vim.g.mapleader = ' '
 
 -- disable netrw file explorer to replace it with another better
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+local disable_netrw = false
+
+if disable_netrw then
+    vim.g.loaded_netrw = 1
+    vim.g.loaded_netrwPlugin = 1
+end
 
 -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 -- global editor configurations
