@@ -2,7 +2,7 @@ local plugins_config_module = 'plugins_config'
 
 local all_config = {
     'lsp',
-    'nvim_tree',
+    'telescope_nvim',
 }
 
 for _, config in pairs(all_config) do
