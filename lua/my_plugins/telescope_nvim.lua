@@ -5,7 +5,5 @@ return {
     },
     config=function ()
         require('telescope').setup()
-
-        print('telescope configured')
     end
 }
