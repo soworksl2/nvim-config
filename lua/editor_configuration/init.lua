@@ -18,6 +18,10 @@ end
 -- global editor configurations
 -- -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
+-- setting the timeout lenght for write maps
+
+go.timeoutlen = 10000
+
 -- tabulations and automatic indentation
 
 go.tabstop = 4
